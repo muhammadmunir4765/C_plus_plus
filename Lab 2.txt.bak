@@ -1,0 +1,104 @@
+//LAB2 
+
+//Activity 1:	Write a C++ program that asks user to input two integer values and then performs the addition, subtraction, multiplication, and
+//division on those values. Something like shown below:
+
+//Sample OUTPUT
+//Enter your first number : 8
+//Enter your second number : 4
+//Addition is : 12
+//Sutraction is : 4
+//Multiplication is : 32
+//Division is : 2
+
+//Solution 
+
+#include<iostream>
+using namespace std; 
+int main(){
+	 
+	int var1,var2;
+	int sum,minus,multi,div;
+	
+	cout<<"Enter your first number : ";
+	cin>>var1; //save value in var1 
+	cout<<"Enter your second number : ";
+	cin>>var2;	//save value n var2
+	
+	//Now 
+	sum=var1+var2;
+	cout<<"Addition is : "<<sum<<endl;
+	minus=var1-var2;
+	cout<<"Sutraction is : "<<minus<<endl;
+	multi=var1*var2;
+	cout<<"Multiplication is : "<<multi<<endl;
+	div=var1/var2;
+	cout<<"Division is : "<<div<<endl;
+	
+	
+	return 0; 
+}
+
+
+
+//Activity 2:	Make some changes in the program written in the Activity 1 so that the output should be like the following
+
+//Sample OUTPUT
+//Enter your first number : 12
+//Enter your second number : 4
+//Addition of 12 and 4 is : 16
+//Sutraction of 12 and 4 is : 8
+//Multiplication of 12 and 4 is : 48
+//Division of 12 and 4 is : 3
+
+#include<iostream>
+using namespace std; 
+int main(){
+	 
+	int var1,var2;
+	int sum,minus,multi,div;
+	
+	cout<<"Enter your first number : ";
+	cin>>var1; //save value in var1 
+	cout<<"Enter your second number : ";
+	cin>>var2;	//save value n var2
+	
+	//Now 
+	sum=var1+var2;
+	cout<<"Addition of "<<var1<<" and "<<var2<<" is : "<<sum<<endl;
+	minus=var1-var2;
+	cout<<"Sutraction of "<<var1<<" and "<<var2<<" is : "<<minus<<endl;
+	multi=var1*var2;
+	cout<<"Multiplication of "<<var1<<" and "<<var2<<" is : "<<multi<<endl;
+	div=var1/var2;
+	cout<<"Division of "<<var1<<" and "<< var2<<" is : "<<div<<endl;
+	
+	
+	return 0; 
+}
+
+
+//Activity 3:	The formula for converting the temperature from Celsius to Fahrenheit is as follows. 
+//Formula : F=((9/5)*C)+32
+//Now, write a C++ program that asks users to input a temperature in Celsius.
+//Then, your program should convert that temperature to Fahrenheit (according to the formula given above) and display the converted temperature on the screen.
+
+#include<iostream>
+using namespace std; 
+int main(){
+		
+	float temp_in_celc;
+	float temp_in_frnh;
+	
+	cout<<"Enter temperature in celcius : ";
+	cin>>temp_in_celc;
+	cout<<endl;
+	temp_in_frnh=((9*temp_in_celc)/5)+32;
+	cout<<"Temp in Farnhite is : "<<temp_in_frnh;
+		 
+
+	return 0; 
+}
+
+
+//Activity 4:	Make some changes in the program written in the Activity 3 to convert the temperature vice versa (I.e., from Fahrenheit to Celsius) according to the following formula
