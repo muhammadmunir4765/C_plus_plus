@@ -1,0 +1,125 @@
+//Lab 4 by MUNIR SOOMRO OR MUHAMMAD MUNIR 
+
+//Activity 1: Write a C++ program that should ask a user to input a number and then print if that number is odd or even.
+//Hint: A number is even if it is fully/completely divided by 2. Otherwise, it is odd.
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	cout<<"	Even or Odd \n\n";
+	
+	cout<<"	Entrer Number : ";
+	int input;
+	cin>>input;
+	if((input%20)==0){
+		cout<<"\n	Nummber is Even. ";
+		
+	}
+	else {
+		cout<<"\n	Number is Odd.";
+		
+	}
+	
+	return 0;
+}
+
+//Activity 2: Write a C++ program which should ask you to input your name (or username). Then, if that username matches with your name, then it should print “Success”. 
+//Otherwise, it should print “Failure”.
+
+#include <iostream>
+using namespace std;
+int main() {
+	
+	cout<<"	Entrer your username : ";
+	string input;
+	cin>>input;
+	if(input=="Munir"){
+		cout<<"\n	Succcess ";
+		
+	}
+	else {
+		cout<<"\n	Failure";
+		
+	}
+	
+	return 0;
+}
+
+//Activity 3: Extend the program written in Activity 2. Now, it should also ask to enter a password. If the username is abc and the password is pass123, then it should display “Success”. 
+//Otherwise, it should display “Failure”.
+//Hint: Here, you have to check for two conditions. One for the username and second for the password.
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	
+	string password="pass123";
+	string username="abc";
+	string user_input,pass_input;
+	
+	cout<<"	Entrer your username : ";
+	cin>>user_input;
+	cout<<endl;
+	
+	cout<<"	Enter you password : ";
+	cin>>pass_input;
+	
+	
+	
+	if(user_input==username && pass_input==password){
+		cout<<"\n	Succcess ";
+		
+	}
+	else {
+		cout<<"\n	Failure";
+		
+	}
+	
+	return 0;
+}
+
+//Activity 4: Write a C++ program that should ask a user to enter the 
+// Total marks in a semester
+// Marks obtained by a student .
+//Then, it should compute the percentage of that student according to the obtained marks out of total marks. 
+//Finally, it should tell the grade of a student according to the percentage of his/her marks. Details/rules of the grades are given below
+// If the percentage is 90 (or more than 90) and less than or equal to 100, then the grade is A1.
+// If the percentage is less than 90 but greater than or equal to 80, then the grade is A.
+// Similarly, if the percentage is between 70 and 79, then the grade is B.
+// If the percentage is between 60 and 69, then the grade is C.
+// If the percentage is less than 60, then the student fails and the grade is F
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	
+	float total,obtained,percentage;
+	
+	cout<<"Enter total marks : ";
+	cin>>total;
+	cout<<"\nEnter obtained marks : ";
+	cin>>obtained;
+	cout<<endl;
+	
+	percentage=(obtained*100)/100;
+	
+	if  (percentage >=90 && percentage<=100){
+		cout<<"A1 Grade \n";
+	}
+	else if(percentage >=80 && percentage<90){
+		cout<<"A Grade \n";
+	}
+	else if(percentage >=70 && percentage<80){
+		cout<<"B Grade \n";
+	}
+	else if(percentage >=60 && percentage<70){
+		cout<<"C Grade \n";
+	}
+	else {
+		cout<<"F Grade\n";
+	}
+	return 0;
+}
