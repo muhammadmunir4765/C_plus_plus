@@ -1,0 +1,91 @@
+//Lab 03 By MUNIR SOOMRO OR MUHAMMAD MUNIR 
+
+//Task1 : Use (+,-,*,/,++,--)Operator .
+
+#include<iostream>
+using namespace std;
+int main(){
+	
+	cout<<"Suppose 2 numbers and we will perform some actions on it .\n"<<endl;
+	int a=48;
+	cout<<"First Number will be : "<<a<<endl;
+	int b=12;
+	cout<<"Second Number will be : "<<b<<endl<<endl;
+	cout<<"Now,we will be using some operators on it."<<endl<<endl;
+	
+	int sum,minus,mult,div,inc,dec;
+	sum=a+b;
+	cout<<"\t a + b : "<<sum<<endl;
+	minus=a-b;
+	cout<<"\t a - b : "<<minus<<endl;
+	div=a/b;
+	cout<<"\t a / b : "<<div<<endl;
+	mult=a*b;
+	cout<<"\t a x b : "<<mult<<endl;
+	inc=++a;
+	cout<<"\t ++a   : "<<inc<<endl;
+	dec=--a;
+	cout<<"\t --a   : "<<dec<<endl;
+	
+	return 0;
+}
+
+
+//Task2 : Understand the concept of pre and post increment and decrement.
+
+#include<iostream>
+using namespace std;
+int main(){
+	
+	int a=33;
+	cout<<"Post_Inrement ( a++ ) : "<<a++<<endl;
+	cout<<"a now : "<<a<<endl;
+	cout<<"Pre_Increment ( ++a ) : "<<++a<<endl;
+	cout<<"a now : "<<a<<endl;
+	cout<<"Post_Decrement( a-- ) : "<<a--<<endl; 
+	cout<<"a now : "<<a<<endl;
+	cout<<"Pre_Decrement ( --a ) : "<<--a<<endl;
+	cout<<"a now : "<<a<<endl;
+	return 0;
+}
+
+//Task3 : Usage of Relational Operator.
+
+#include <iostream>
+using namespace std;
+int main() {
+	cout<<"If any given Relational operator is true, it will return 1 otherwise 0."<<endl;
+	
+	int a = 22;
+	int b = 46;
+	
+	cout << "a=22 , b=46" << endl;
+	cout << "is a == b ? "<< (a == b) << endl; 
+	cout << "is a != b ? "<< (a != b) << endl;
+	cout << "is a  < b ? "<< (a <  b) << endl;
+	cout << "is a <= b ? "<< (a <= b) << endl;
+	cout << "is a >  b ? "<< (a >  b) << endl;
+	cout << "is a >= b ? "<< (a >= b) << endl;
+	
+	
+	return 0;
+}
+
+//Task 4 : Lgoical Operator usage.
+
+#include <iostream>
+using namespace std;
+int main() {
+	cout<<"If any given Relational operator is true, it will return 1 otherwise 0."<<endl;
+	
+	int a = 22;
+	int b = 46;
+	
+	cout << "a=22 , b=46" << endl;
+	cout << "is a == b && a<30 ? "<< (a == b && a<30 ) << endl; 
+	cout << "is a == b || a>30 ? "<< (a == b || a>30 ) << endl;
+	cout << "is a != b ? "		  << (a != b 		 ) << endl;
+	
+	
+	return 0;
+}
